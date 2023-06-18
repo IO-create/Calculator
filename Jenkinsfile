@@ -12,18 +12,18 @@ pipeline {
     	}
     	stage('Maven Clean') {
         	steps {
-        	sh "mvn clean"  	 
+        	bat "mvn clean"  	 
         	}
     	}
     	stage('Maven Build') {
         	steps {
-        	sh "mvn compile"  	 
+        	bat "mvn compile"  	 
         	}
     	}
    	 
     	stage("Unit test") {          	 
         	steps {  	 
-            	sh "mvn test"          	 
+            	bat "mvn test"          	 
        	}
 }
 }
